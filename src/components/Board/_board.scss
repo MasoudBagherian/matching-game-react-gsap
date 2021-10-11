@@ -1,0 +1,69 @@
+.board {
+  width: 80%;
+  max-width: 80rem;
+  padding: 4rem 2rem;
+  margin: 0 auto 4rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: #fff;
+  user-select: none;
+  overflow: hidden;
+  &__title {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    @media (min-width: $breakpoint-sm) {
+      font-size: 1.6rem;
+    }
+    @media (min-width: $breakpoint-md) {
+      width: 50%;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+    }
+  }
+  &__cells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__image {
+    width: 50%;
+    padding: 1rem;
+    @media (min-width: $breakpoint-sm) {
+      width: 33.33%;
+      padding: 2rem;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__start {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid darken(#ccc, 10%);
+    @media (min-width: $breakpoint-md) {
+      border-bottom: none;
+      border-right: 1px solid darken(#ccc, 10%);
+      padding-right: 2rem;
+      padding-bottom: 0;
+      width: 50%;
+    }
+  }
+  &__end {
+    padding-top: 2rem;
+    @media (min-width: $breakpoint-md) {
+      padding-left: 2rem;
+      padding-top: 0;
+      width: 50%;
+    }
+  }
+}

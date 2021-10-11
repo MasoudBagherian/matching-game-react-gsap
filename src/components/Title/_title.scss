@@ -1,0 +1,16 @@
+.title {
+  color: #8c0;
+  padding: 2rem;
+  user-select: none;
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    justify-content: center;
+    font: inherit;
+  }
+  &__char {
+    position: relative;
+    font-size: 2.8rem;
+  }
+}

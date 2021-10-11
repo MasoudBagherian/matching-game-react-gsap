@@ -1,0 +1,10 @@
+// extensions
+@import './extensions/variables';
+// vendor
+@import './vendor/fonts';
+// base
+@import './base/reset';
+// components
+@import '../../components/Title/title';
+@import '../../components/Board/board';
+@import '../../UI/Modal/modal';
